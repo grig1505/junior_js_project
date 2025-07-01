@@ -29,7 +29,7 @@ export class Form extends Component {
 
     this.$rootElement.append(label, this.$button);
 
-    // Устранение привязок через bind
+   
     this.$input.addEventListener('input', (event) => this.handleInput(event));
     this.$rootElement.addEventListener('submit', (event) => this.handleSubmit(event));
   }
