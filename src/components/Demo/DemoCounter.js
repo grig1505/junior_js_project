@@ -13,8 +13,8 @@ export class DemoCounter extends Component {
     heading.textContent = `${props.title}: ${this.state.counter}`;
     this.$heading = heading;
 
-    const incrementButton = new DemoButton({ text: 'Increment', onClick: this.handleIncrement.bind(this) });
-    const decrementButton = new DemoButton({ text: 'Decrement', onClick: this.handleDecrement.bind(this) });
+    const incrementButton = new DemoButton({ text: 'Увеличить', onClick: this.handleIncrement.bind(this) });
+    const decrementButton = new DemoButton({ text: 'Уменьшить', onClick: this.handleDecrement.bind(this) });
 
     this.$rootElement.append(heading, incrementButton.$rootElement, decrementButton.$rootElement);
   }
